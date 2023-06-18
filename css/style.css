@@ -1,0 +1,710 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+  
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+
+/* side bar start */
+
+.side-bar-main .div-logo img{
+    width: 50px;
+}
+
+
+.side-bar-main .div-logo {
+    margin: 46px 33px;
+}
+
+
+.side-bar-main .main-logo-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+    margin: 13% 5% 0% 0%;
+}
+ 
+.side-bar-main .main-logo-toggle .div-hamm .hamm{
+    background-color: white;
+    
+    width: 33px;
+    height: 3px;
+    margin:8px 0px;
+    border-radius: 40px;
+    transition: 0.5s;
+
+}
+
+.side-bar-main .main-logo-toggle .div-hamm:hover .hamm:first-child{
+width: 22px;
+transition: 0.5s;
+}
+.side-bar-main .main-logo-toggle .div-hamm:hover .hamm:last-child{
+width: 22px;
+transition: 0.5s;
+}
+
+.side-bar-main .main-logo-toggle .div-cros i.fa-solid {
+    font-size: 41px;
+    margin: 8px 110px;
+}
+
+
+.side-bar-main{
+    position: fixed;
+    width: 21%;
+    height: 100%;
+    background-color: #ed2d34;
+    top: 0;
+    
+    color: white;
+    z-index: 5;
+}
+
+.side-bar-main-inactive{
+    left: -15%;
+    transition: 0.5s;
+}
+
+.side-bar-main-active{
+    left: -10%;
+    transition: 0.5s;
+    
+}
+
+
+
+
+
+
+.side-bar-main .div-menu {
+width: 100%;
+display: flex;
+justify-content: center;
+margin: 92px 0px;
+}
+
+.side-bar-main .div-menu ul {
+    width: 100%;
+}
+.side-bar-main .div-menu ul li {
+    width: 100%;
+    display: flex;
+    
+
+}
+
+.side-bar-main .div-menu ul li a{
+
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.side-bar-main .div-menu ul li a::before{
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 40px;
+    top: 93%;
+    left:-100%;
+    width: 100%;
+    height: 2px;
+    
+    
+    transition: 0.5s;
+    
+}
+
+
+.side-bar-main .div-menu ul li a:hover::before{
+    
+    
+    left: 0%;
+}
+
+.side-bar-main .div-social-icons{
+
+    width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.side-bar-main .div-social-icons ul{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.side-bar-main .div-social-icons ul li{
+    margin: 12% 0% 12% 10%;
+    
+}
+
+
+.side-bar-main .div-social-icons ul li i.fa-brands {
+    font-size: 40px;
+}
+
+
+.side-bar-main .div-copyright{
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+
+
+/* side bar end */
+
+
+
+/* main body start  */
+
+.main-body{
+    width: 100%;
+    height: 1100px;
+    padding-left: 6%;
+    position: relative;
+    background-color: black;
+    
+}
+
+
+
+.main-body .sec-position{
+    padding: 5%  0%;
+    /* background-image: url(../image/banner.jpg); */
+    background-size: cover;
+    background-color: black;
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 90%;
+    left: 8%;
+    height: 90%;
+    transition: 2s;
+    border-radius: 0px 0px 20px 20px;
+    border: 2px solid red;
+    border-top: none;
+    box-shadow: 1px 1px 9px 2px #08080836;
+}
+
+.main-body .sec-banner{
+
+    z-index: 4;
+    padding-top: 10%;
+    margin-top: -3%;
+   
+    
+
+}
+
+.div-banner-image {
+    background-color: red;
+    /* border-radius: 100%; */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.main-body .sec-banner .colum-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-body  h1 .text-gray {
+    color: white;
+    font-weight: 700;
+}
+.main-body .projects-sec h1 {
+    font-size: 46px;
+    color: #ed2d34;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.main-body .projects-sec h1 span{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.main-body .div-slid-show  h3 {
+    font-size: 48px;
+    color: #ed2d34;
+    font-weight: 700;
+}
+
+.div-slid-show {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 16%;
+}
+
+.div-slide {
+    position: absolute;
+    animation-name: hero-slide;
+    animation-duration: 10s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes hero-slide {
+    0%{
+        top: 0%;
+    }
+
+10%{
+    top: -100%;
+} 
+
+20%{
+    top: -100%;
+} 
+30%{
+    top: -100%;
+} 
+
+40%{
+    top: -200%;
+} 
+50%{
+    top: -200%;
+} 
+
+55%{
+    top: -200%;
+} 
+
+
+65%{
+    top: -300%;
+} 
+
+75%{
+    top: -300%;
+} 
+
+85%{
+    top: -300%;
+} 
+
+95%{
+    top: 0%;
+} 
+
+
+
+
+    100%{
+
+        top: 0%;
+    }
+    
+}
+
+
+
+
+.main-body  p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.main-body h3{
+    color: white;
+}
+
+
+.div-button {
+    border: 2px solid red;
+    width: fit-content;
+    padding: 9px 23px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.div-button a{
+    color: white;
+}
+
+.div-button:hover{
+    background-color: #ed2d34;
+    color: white;
+    border: 2px solid #ed2d34;
+}
+
+
+.main-body .sec-banner .div-banner-image img{
+    width: 85%;
+}
+
+
+.main-body .sec-banner .div-social-icons ul{
+    display: flex;
+    justify-content: end;
+}
+.main-body .sec-banner .div-social-icons ul li{ 
+    
+    width: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  transition: 0.5s;
+    color: #464646;
+}
+
+.main-body .sec-banner .div-social-icons ul li:hover{ 
+   
+    background-color: #ed2d34;
+    border-radius: 100%;
+    
+    color: white;
+}
+
+
+
+.slide-down{
+   
+    top: 0pc;
+   
+}
+
+.slide-up{
+    
+    top: -60pc ;
+   
+}
+
+
+
+
+
+
+/* sec2 start */
+
+
+.sec2 {
+    z-index: 3;
+    /* top: 20%; */
+    margin-top: -2%;
+}
+
+.projects-sec .div-counter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects-sec .div-portfolio-card  {
+position: relative;
+margin: 6% 7%;
+border: 4px solid red;
+padding: 0% 0%;
+border-radius: 5px;
+box-shadow: 1px 1px 30px 1px red;
+}
+
+.projects-sec .div-portfolio-card .port-btn {
+    background-color: red;
+    text-align: center;
+    
+    color: white;
+    text-transform: capitalize;
+    padding: 2% 0%;
+    font-weight: 700;
+}
+
+/* .sec2 .div-portfolio-card::before  {
+    position: absolute;
+    content: "";
+    background-color: red;
+    top: -5%;
+    left: 0%;
+    width: 50%;
+    height: 5%;
+}
+
+.sec2 .div-portfolio-card::after  {
+    position: absolute;
+    content: "";
+    background-color: red;
+    top: 0%;
+    left: -3%;
+    width: 3%;
+    height: 60%;
+} */
+
+
+/* each website image by using background image */
+
+.projects-sec .div-portfolio-card .bacanlow {
+background-image: url(../image/baconlawfirm.png);
+}
+
+
+.projects-sec .div-portfolio-card .mickreyna {
+background-image: url(../image/mickreynarealestate.png);
+}
+
+.projects-sec .div-portfolio-card .lighthouse {
+background-image: url(../image/lighthousehealing.png);
+}
+
+.projects-sec .div-portfolio-card .fantom {
+background-image: url(../image/fantom.png);
+}
+
+.projects-sec .div-portfolio-card .e-book {
+background-image: url(../image/e-book.png);
+}
+
+.projects-sec .div-portfolio-card .social {
+background-image: url(../image/sociaomed.png);
+}
+
+
+
+.projects-sec .div-portfolio-card .port-image {
+    width: 100%;
+    height: 192px;
+    
+    transition: 5.5s;
+    
+background-size: cover;
+background-position: center top;   
+ 
+}
+
+
+
+.projects-sec .div-portfolio-card .port-image:hover  {
+    background-position: center bottom;
+   
+    
+    
+}
+
+
+
+
+.projects-sec .div-counter .div-count-1{ 
+
+    display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+
+.projects-sec .div-counter .div-count-1 h5{
+    font-size: 28px;
+}
+
+.projects-sec .div-counter .div-count-1 p{
+    font-size: 15px;
+}
+
+
+.projects-sec .div-image img{
+    width: 100%;
+}
+
+.projects-sec .button-se2{
+    display: flex;
+    justify-content: center ;
+    margin-top: 5%;
+}
+
+
+
+/* sec2 wnd */
+
+/* sec3 start */
+
+.sec3 {
+    z-index: 2;
+    margin-top: -1%;
+}
+
+
+.sec3 h1{
+    text-align: center;
+    
+}
+
+
+.sec3 .div-testimoni {
+
+   
+padding: 5%;
+text-align: center;
+color: #5a5a5a;
+}
+
+
+.sec3 .div-testimoni .div-quat{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    color: #b8b8b8;
+    font-size: 37px;
+}
+
+.sec3 .div-testimoni .div-reviwe{
+
+    margin-bottom: 10%;
+}
+
+.sec3 .div-testimoni .div-image{
+    margin-bottom: 5%;
+}
+
+
+
+.sec3 .div-testimoni .div-image img{
+
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+
+
+}
+
+
+footer{
+    z-index: 1;
+    padding-top: 7% !important;
+}
+
+footer ul {
+    padding: 0;
+    line-height: 50px;
+}
+
+
+footer form input{
+    width: 100%;
+    padding: 2%;
+    padding: 22px 0px;
+    border: none;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    background-color: transparent;
+}
+
+footer textarea {
+    width: 100%;
+    height: 124px;
+    padding: 22px 0px;
+    border: none;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    background-color: transparent;
+    
+}
+
+
+.submit-button{
+
+    padding: 0;
+    background-color: unset;
+    padding: 2% 5%;
+    text-align: center;
+    width: 30%;
+    border: 2px solid #ed2d34;
+    border-radius: 40px;
+    color: wheat;
+    margin: 5% 0%;
+    transition: 0.5s;
+}
+.submit-button:hover{
+
+    color: white;
+    background-color: red;
+    
+}
+
+.form-button{
+    width: 100%;
+    
+}
+
+
+.div-slider-button {
+    position: fixed;
+    z-index: 6;
+    top: 40%;
+    left: 3%;
+}
+
+.div-slider-button button{
+
+    background-color: unset;
+color: white;
+    border: none;
+    font-size: 35px;
+    margin: 30px 0px;
+}
+
+.show{
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 6;
+}
+
+.hidden{
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+/* body shadow div */
+
+.div-for-shadow{
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.562), transparent);
+    z-index: 0;
+}
+
+.div-for-shadow video{
+    width: 100%;
+}
+
+/* main body end  */
