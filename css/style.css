@@ -160,7 +160,7 @@ align-items: center;
 
 
 .side-bar-main .div-social-icons ul li i.fa-brands {
-    font-size: 40px;
+    font-size: 24px;
 }
 
 
@@ -198,14 +198,14 @@ align-items: center;
     /* background-position: center center; */
     background-repeat: no-repeat;
     position: fixed;
-    width: 90%;
+    width: 88%;
     left: 8%;
     height: 90%;
     transition: 2s;
     border-radius: 0px 0px 20px 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-top: none;
-    box-shadow: 1px 1px 9px 2px #08080836;
+    box-shadow: 1px 1px 9px 2px red;
 }
 
 .main-body .sec-banner{
@@ -213,6 +213,7 @@ align-items: center;
     z-index: 4;
     padding-top: 10%;
     margin-top: -3%;
+    margin-left: 3%;
    
     
 
@@ -400,14 +401,14 @@ align-items: center;
 
 .slide-down{
    
-    top: 0pc;
-   
+    left: 8% !important;
+   opacity: 1;
 }
 
 .slide-up{
     
-    top: -60pc ;
-   
+    left: 120% !important;
+   opacity: 0;
 }
 
 
@@ -422,6 +423,7 @@ align-items: center;
     z-index: 3;
     /* top: 20%; */
     margin-top: -2%;
+    margin-left: 2%;
 }
 
 .projects-sec .div-counter{
@@ -559,6 +561,7 @@ flex-direction: column;
 .sec3 {
     z-index: 2;
     margin-top: -1%;
+    margin-left: 1%;
 }
 
 
