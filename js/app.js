@@ -39,6 +39,7 @@ console.log( window.innerHeight)
 let sec_banner = document.querySelector('.sec-banner')
 let sec2 = document.querySelector('.sec2')
 let sec3 = document.querySelector('.sec3')
+let sec4 = document.querySelector('.sec4')
 
 window.onscroll = function(event){
 
@@ -47,6 +48,7 @@ window.onscroll = function(event){
 if (scroll > 60){
 
         sec_banner.classList.add('slide-up')
+        sec2.classList.remove('z-index')
         
         console.log("sec-banner")
         
@@ -54,12 +56,15 @@ if (scroll > 60){
 
                 sec_banner.classList.add('slide-down')
                 sec_banner.classList.remove('slide-up')
+                sec2.classList.add('z-index')
 
             }
 
             if (scroll > 200){
 
                 sec2.classList.add('slide-up')
+                sec3.classList.remove('z-index')
+                
                 
                 console.log(sec2)
                 
@@ -67,6 +72,7 @@ if (scroll > 60){
                         console.log("down")
                         sec2.classList.add('slide-down')
                         sec2.classList.remove('slide-up')
+                        sec3.classList.add('z-index')
         
                     }
 
@@ -74,6 +80,8 @@ if (scroll > 60){
                     if (scroll > 340){
 
                         sec3.classList.add('slide-up')
+                        sec4.classList.remove('z-index')
+                        
                         
                         console.log(sec3)
                         
@@ -81,6 +89,7 @@ if (scroll > 60){
                                 console.log("down")
                                 sec3.classList.add('slide-down')
                                 sec3.classList.remove('slide-up')
+                                sec4.classList.add('z-index')
                 
                             }
 }
